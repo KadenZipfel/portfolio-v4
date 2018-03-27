@@ -8,6 +8,10 @@ app.get('/', (req, res) => {
   res.render('index.ejs');
 });
 
+app.get('/natours', (req, res) => {
+  res.render('portfolio/Natours/index.ejs');
+});
+
 app.listen(process.env.PORT, () => {
   console.log('Server is running');
 });
