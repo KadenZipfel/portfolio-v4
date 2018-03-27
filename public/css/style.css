@@ -122,12 +122,12 @@ hr {
     width: 100%;
     background-size: cover; }
   .card__img--2 {
-    background-image: url("../img/mountain-travel.JPG");
+    background-image: url("../img/Natours.JPG");
     height: 73%;
     width: 100%;
     background-size: cover; }
   .card__img--3 {
-    background-image: url("../img/Natours.JPG");
+    background-image: url("../img/mountain-travel.JPG");
     height: 73%;
     width: 100%;
     background-size: cover; }
@@ -147,7 +147,9 @@ hr {
     padding: 1rem; }
   .card__desc {
     font-size: 1.5rem;
-    font-family: 'Roboto'; }
+    font-family: 'Roboto';
+    padding: 0 2rem;
+    text-align: center; }
   .card__link {
     text-decoration: none;
     color: black; }
