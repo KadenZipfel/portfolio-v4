@@ -2,13 +2,14 @@
   position: relative;
   min-height: 100vh;
   background-color: #f2f2f2;
-  padding: 4rem;
+  padding: 5rem 3rem;
   display: flex;
   flex-direction: column;
   
   &__heading {
     font-size: 4rem;
     font-weight: 300;
+    color: rgba(black, 0.8);
   }
   
   &__paragraph {
@@ -16,11 +17,12 @@
     font-weight: 300;
     font-family: 'Roboto';
     padding: 1rem 0;
+    color: rgba(black, 0.8);
   }
 }
 
 .contact-form {
-  height: 80vh;
+  height: 75vh;
   display: flex;
   justify-content: center;
   

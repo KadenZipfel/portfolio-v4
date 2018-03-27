@@ -58,6 +58,7 @@ hr {
     opacity: 0.75; }
 
 .nav {
+  background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   padding: 1rem 0;
   display: flex;
@@ -82,7 +83,7 @@ hr {
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
-  padding: 4rem; }
+  padding: 5rem 3rem; }
   .portfolio__heading {
     font-size: 4rem;
     font-weight: 300; }
@@ -158,20 +159,22 @@ hr {
   position: relative;
   min-height: 100vh;
   background-color: #f2f2f2;
-  padding: 4rem;
+  padding: 5rem 3rem;
   display: flex;
   flex-direction: column; }
   .contact__heading {
     font-size: 4rem;
-    font-weight: 300; }
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.8); }
   .contact__paragraph {
     font-size: 1.5rem;
     font-weight: 300;
     font-family: 'Roboto';
-    padding: 1rem 0; }
+    padding: 1rem 0;
+    color: rgba(0, 0, 0, 0.8); }
 
 .contact-form {
-  height: 80vh;
+  height: 75vh;
   display: flex;
   justify-content: center; }
   .contact-form__group {
