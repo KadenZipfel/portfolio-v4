@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-v4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "compile:sass": "node-sass public/sass/main.scss public/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KadenZipfel/portfolio-v4.git"
+  },
+  "author": "Kaden Zipfel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KadenZipfel/portfolio-v4/issues"
+  },
+  "homepage": "https://github.com/KadenZipfel/portfolio-v4#readme",
+  "devDependencies": {
+    "node-sass": "^4.8.3"
+  }
+}
