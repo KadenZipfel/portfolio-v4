@@ -224,3 +224,22 @@ hr {
       outline: none; }
     .contact-form__btn:focus {
       outline: none; }
+
+.alert {
+  display: none; }
+
+.show-alert {
+  background-color: lightgrey;
+  border: 1px solid grey;
+  padding: 2rem;
+  border-radius: 5px;
+  width: 50vw;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+  .show-alert__text {
+    font-family: "Roboto";
+    font-size: 1.5rem;
+    text-align: center; }

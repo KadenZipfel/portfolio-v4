@@ -89,25 +89,31 @@
     <p class="contact__paragraph">
       If you are interested in working with me, shoot me an email!
     </p>
+    
+    <div class="alert show-alert">
+      <p class="show-alert__text">
+        Success!
+      </p>
+    </div>
+    
     <div class="contact-form">
-      <form action="#" class="contact-form__group">
+      <form method="POST" name="contact_form" action="http://serverlessforms.com/api/form/d7e88f9e-cca2-5900-95c9-2fcdd37a3fe3/form-response" class="contact-form__group">
         <div class="contact-form__sub-group">
-          <input id="name" type="text" class="contact-form__input" placeholder="Name">
+          <input name="name" id="name" type="text" class="contact-form__input" placeholder="Name">
           <label for="name" class="contact-form__label">Name</label>
         </div>
         <div class="contact-form__sub-group">
-          <input id="email" type="email" class="contact-form__input" placeholder="Email">
+          <input name="email" id="email" type="email" class="contact-form__input" placeholder="Email">
           <label for="email" class="contact-form__label">Email</label>
         </div>
         <div class="contact-form__sub-group">
           <textarea name="message" id="message" rows="5" class="contact-form__textarea" placeholder="Type your message here..."></textarea>
           <label for="message" class="contact-form__label">Message</label>
         </div>
-        <button class="contact-form__btn">Submit</button>
+        <input onclick="thanks()" type="submit" value="Submit" class="contact-form__btn">
       </form>
     </div>
   </section>
-
   
   <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
