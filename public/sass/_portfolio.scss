@@ -8,6 +8,10 @@
   align-content: center;
   padding: 5rem 3rem;
   
+  @media(max-width: 900px) {
+    padding: 7rem 3rem;
+  }
+  
   &__heading {
     font-size: 4rem;
     font-weight: 300;
@@ -15,12 +19,20 @@
 }
 
 .cards {
-  height: 200vh;
+  min-height: 200vh;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
   grid-gap: 3rem;
   padding: 3rem;
+  
+  @media (max-width: 1200px) {
+    grid-template-rows: repeat(21, 1fr);
+  }
+  
+  @media (max-width: 500px) {
+    grid-template-rows: repeat(16, 1fr);
+  }
 }
 
 .card {
@@ -55,42 +67,142 @@
     grid-column: 4 / span 6;
   }
   
-  &__img {
+  @media (max-width: 1200px) {
     
+    &--1 {
+      grid-row: 1 / span 4;
+      grid-column: 3 / span 8; 
+    }
+    
+    &--2 {
+      grid-row: 5 / span 4;
+      grid-column: 3 / span 8;
+    }
+    
+    &--3 {
+      grid-row: 9 / span 4;
+      grid-column: 3 / span 8;
+    }
+    
+    &--4 {
+      grid-row: 13 / span 4;
+      grid-column: 3 / span 8;
+    }
+    
+    &--5 {
+      grid-row: 17 / span 4;
+      grid-column: 3 / span 8;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    
+    &--1 {
+      grid-row: 1 / span 4;
+      grid-column: 2 / span 10; 
+    }
+    
+    &--2 {
+      grid-row: 5 / span 4;
+      grid-column: 2 / span 10; 
+    }
+    
+    &--3 {
+      grid-row: 9 / span 4;
+      grid-column: 2 / span 10; 
+    }
+    
+    &--4 {
+      grid-row: 13 / span 4;
+      grid-column: 2 / span 10; 
+    }
+    
+    &--5 {
+      grid-row: 17 / span 4;
+      grid-column: 2 / span 10; 
+    }
+  }
+  
+  @media (max-width: 600px) {
+    
+    &--1 {
+      grid-row: 1 / span 4;
+      grid-column: 1 / span 12; 
+    }
+    
+    &--2 {
+      grid-row: 5 / span 4;
+      grid-column: 1 / span 12;  
+    }
+    
+    &--3 {
+      grid-row: 9 / span 4;
+      grid-column: 1 / span 12; 
+    }
+    
+    &--4 {
+      grid-row: 13 / span 4;
+      grid-column: 1 / span 12; 
+    }
+    
+    &--5 {
+      grid-row: 17 / span 4;
+      grid-column: 1 / span 12; 
+    }
+  }
+  
+  @media (max-width: 500px) {
+    
+    &--1 {
+      grid-row: 1 / span 3;
+      grid-column: 1 / span 12; 
+    }
+    
+    &--2 {
+      grid-row: 4 / span 3;
+      grid-column: 1 / span 12;  
+    }
+    
+    &--3 {
+      grid-row: 7 / span 3;
+      grid-column: 1 / span 12; 
+    }
+    
+    &--4 {
+      grid-row: 10 / span 3;
+      grid-column: 1 / span 12; 
+    }
+    
+    &--5 {
+      grid-row: 13 / span 3;
+      grid-column: 1 / span 12; 
+    }
+  }
+  
+  &__img {
+    background-position: center;
+    height: 73%;
+    width: 100%;
+    background-size: cover;
     
     &--1 {
       background-image: url('../img/CannaReviews.jpg');
-      height: 73%;
-      width: 100%;
-      background-size: cover;
     }
     
     &--2 {
       background-image: url('../img/Natours.JPG');
-      height: 73%;
-      width: 100%;
-      background-size: cover;
     }
     
     &--3 {
       background-image: url('../img/mountain-travel.JPG');
-      height: 73%;
-      width: 100%;
-      background-size: cover;
     }
     
     &--4 {
       background-image: url('../img/trillo.JPG');
-      height: 73%;
-      width: 100%;
-      background-size: cover;
     }
     
     &--5 {
       background-image: url('../img/Nexter.JPG');
-      height: 73%;
-      width: 100%;
-      background-size: cover;
     }
   }
   
@@ -98,6 +210,10 @@
     font-size: 5rem;
     font-weight: 300;
     padding: 1rem;
+    
+    @media (max-width: 1200px) {
+      padding: .5rem;
+    }
   }
   
   &__desc {

@@ -13,6 +13,14 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; // 1 rem = 10px, 10px/16px = 62.5%
   font-family: "Bebas Neue", "Oswald";
+  
+  @media (max-width: 600px) {
+    font-size: 56.25%;
+  }
+  
+  @media (max-width: 900px) {
+    font-size: 50%;
+  }
 }
 
 body {

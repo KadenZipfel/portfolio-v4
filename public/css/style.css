@@ -11,6 +11,12 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   font-family: "Bebas Neue", "Oswald"; }
+  @media (max-width: 600px) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 900px) {
+    html {
+      font-size: 50%; } }
 
 body {
   position: relative; }
@@ -42,6 +48,15 @@ hr {
     font-weight: 300;
     letter-spacing: .5rem;
     text-transform: uppercase; }
+    @media (max-width: 800px) {
+      .hero__heading {
+        font-size: 6rem; } }
+    @media (max-width: 600px) {
+      .hero__heading {
+        font-size: 4rem; } }
+    @media (max-width: 400px) {
+      .hero__heading {
+        font-size: 2.5rem; } }
     .hero__heading--span {
       font-weight: 500; }
   .hero__arrow {
@@ -68,6 +83,9 @@ hr {
   z-index: 10; }
   .nav__item {
     font-size: 2rem; }
+    @media (max-width: 900px) {
+      .nav__item {
+        font-size: 3rem; } }
   .nav__link {
     color: white;
     text-decoration: none;
@@ -84,17 +102,26 @@ hr {
   flex-wrap: wrap;
   align-content: center;
   padding: 5rem 3rem; }
+  @media (max-width: 900px) {
+    .portfolio {
+      padding: 7rem 3rem; } }
   .portfolio__heading {
     font-size: 4rem;
     font-weight: 300; }
 
 .cards {
-  height: 200vh;
+  min-height: 200vh;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
   grid-gap: 3rem;
   padding: 3rem; }
+  @media (max-width: 1200px) {
+    .cards {
+      grid-template-rows: repeat(21, 1fr); } }
+  @media (max-width: 500px) {
+    .cards {
+      grid-template-rows: repeat(16, 1fr); } }
 
 .card {
   background-color: #f2f2f2;
@@ -117,35 +144,92 @@ hr {
   .card--5 {
     grid-row: 9 / span 4;
     grid-column: 4 / span 6; }
-  .card__img--1 {
-    background-image: url("../img/CannaReviews.jpg");
+  @media (max-width: 1200px) {
+    .card--1 {
+      grid-row: 1 / span 4;
+      grid-column: 3 / span 8; }
+    .card--2 {
+      grid-row: 5 / span 4;
+      grid-column: 3 / span 8; }
+    .card--3 {
+      grid-row: 9 / span 4;
+      grid-column: 3 / span 8; }
+    .card--4 {
+      grid-row: 13 / span 4;
+      grid-column: 3 / span 8; }
+    .card--5 {
+      grid-row: 17 / span 4;
+      grid-column: 3 / span 8; } }
+  @media (max-width: 900px) {
+    .card--1 {
+      grid-row: 1 / span 4;
+      grid-column: 2 / span 10; }
+    .card--2 {
+      grid-row: 5 / span 4;
+      grid-column: 2 / span 10; }
+    .card--3 {
+      grid-row: 9 / span 4;
+      grid-column: 2 / span 10; }
+    .card--4 {
+      grid-row: 13 / span 4;
+      grid-column: 2 / span 10; }
+    .card--5 {
+      grid-row: 17 / span 4;
+      grid-column: 2 / span 10; } }
+  @media (max-width: 600px) {
+    .card--1 {
+      grid-row: 1 / span 4;
+      grid-column: 1 / span 12; }
+    .card--2 {
+      grid-row: 5 / span 4;
+      grid-column: 1 / span 12; }
+    .card--3 {
+      grid-row: 9 / span 4;
+      grid-column: 1 / span 12; }
+    .card--4 {
+      grid-row: 13 / span 4;
+      grid-column: 1 / span 12; }
+    .card--5 {
+      grid-row: 17 / span 4;
+      grid-column: 1 / span 12; } }
+  @media (max-width: 500px) {
+    .card--1 {
+      grid-row: 1 / span 3;
+      grid-column: 1 / span 12; }
+    .card--2 {
+      grid-row: 4 / span 3;
+      grid-column: 1 / span 12; }
+    .card--3 {
+      grid-row: 7 / span 3;
+      grid-column: 1 / span 12; }
+    .card--4 {
+      grid-row: 10 / span 3;
+      grid-column: 1 / span 12; }
+    .card--5 {
+      grid-row: 13 / span 3;
+      grid-column: 1 / span 12; } }
+  .card__img {
+    background-position: center;
     height: 73%;
     width: 100%;
     background-size: cover; }
-  .card__img--2 {
-    background-image: url("../img/Natours.JPG");
-    height: 73%;
-    width: 100%;
-    background-size: cover; }
-  .card__img--3 {
-    background-image: url("../img/mountain-travel.JPG");
-    height: 73%;
-    width: 100%;
-    background-size: cover; }
-  .card__img--4 {
-    background-image: url("../img/trillo.JPG");
-    height: 73%;
-    width: 100%;
-    background-size: cover; }
-  .card__img--5 {
-    background-image: url("../img/Nexter.JPG");
-    height: 73%;
-    width: 100%;
-    background-size: cover; }
+    .card__img--1 {
+      background-image: url("../img/CannaReviews.jpg"); }
+    .card__img--2 {
+      background-image: url("../img/Natours.JPG"); }
+    .card__img--3 {
+      background-image: url("../img/mountain-travel.JPG"); }
+    .card__img--4 {
+      background-image: url("../img/trillo.JPG"); }
+    .card__img--5 {
+      background-image: url("../img/Nexter.JPG"); }
   .card__heading {
     font-size: 5rem;
     font-weight: 300;
     padding: 1rem; }
+    @media (max-width: 1200px) {
+      .card__heading {
+        padding: .5rem; } }
   .card__desc {
     font-size: 1.5rem;
     font-family: 'Roboto';
@@ -162,6 +246,9 @@ hr {
   padding: 5rem 3rem;
   display: flex;
   flex-direction: column; }
+  @media (max-width: 900px) {
+    .contact {
+      padding: 7rem 3rem; } }
   .contact__heading {
     font-size: 4rem;
     font-weight: 300;
@@ -183,6 +270,9 @@ hr {
     flex-direction: column;
     justify-items: space-evenly;
     width: 33%; }
+    @media (max-width: 900px) {
+      .contact-form__group {
+        width: 66%; } }
   .contact-form__sub-group {
     padding: 1rem; }
   .contact-form__input {

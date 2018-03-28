@@ -6,6 +6,10 @@
   display: flex;
   flex-direction: column;
   
+  @media(max-width: 900px) {
+    padding: 7rem 3rem;
+  }
+  
   &__heading {
     font-size: 4rem;
     font-weight: 300;
@@ -32,6 +36,10 @@
     flex-direction: column;
     justify-items: space-evenly;
     width: 33%;
+    
+    @media (max-width: 900px) {
+      width: 66%;
+    }
   }
   
   &__sub-group {
